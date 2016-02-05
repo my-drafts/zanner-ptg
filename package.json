@@ -1,7 +1,6 @@
 {
   "name": "zanner-ptg",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
   "main": "index.js",
   "dependencies": {
     "cheerio": "^0.20.0",
@@ -14,5 +13,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sergej Kukharev",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergej-kucharev/zanner-ptg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sergej-kucharev/zanner-ptg/issues"
+  },
+  "homepage": "https://github.com/sergej-kucharev/zanner-ptg#readme",
+  "description": ""
 }
