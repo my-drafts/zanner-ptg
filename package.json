@@ -1,12 +1,12 @@
 {
   "name": "zanner-ptg",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "index.js",
   "dependencies": {
     "cheerio": "^0.20.0",
     "request-promise": "^2.0.0",
-    "zanner-typeof": "^1.0.4",
-    "url": "^0.11.0"
+    "url": "^0.11.0",
+    "zanner-typeof": "^1.0.7"
   },
   "devDependencies": {},
   "scripts": {
