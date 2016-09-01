@@ -1,22 +1,29 @@
 var pt = require('../');
 
 /**/
-pt.translate({sl:'ru', tl:'en', uri:'http://myip.ru/index_small.php', fix:true}) // proxy:'http://104.236.222.191:3128'
+var options = {
+	sl: 'ru',
+	tl: 'en',
+	uri: 'http://myip.ru/index_small.php',
+	fix: true
+};
+pt.translate(options) // proxy:'http://104.236.222.191:3128'
 	.then(function(result){
+		var body = result.body;
 		var code = result.code;
 		var headers = result.headers;
-		var html = result.html;
 		var $ = result.$;
+		//console.log(body);
 		//console.log(code);
 		//console.log(headers);
-		//console.log($(':root').html());
-		console.log($('table.network-info > tr > td').eq(0).html().trim());
+		console.log($(':root').html());
+		//console.log($('table.network-info > tr > td').eq(0).html().trim());
 	}, function(error){
 		console.log(error);
 	});
 /** /
-pt.translate({sl:'ru', tl:'en', uri:'http://myip.ru', fix:true})
-	.then(function(result){
+ pt.translate({sl:'ru', tl:'en', uri:'http://myip.ru', fix:true})
+ .then(function(result){
 		console.log('!');
 		var code = result.code;
 		var headers = result.headers;
@@ -29,4 +36,4 @@ pt.translate({sl:'ru', tl:'en', uri:'http://myip.ru', fix:true})
 	}, function(error){
 		console.log(error);
 	});
-/**/
+ /**/
