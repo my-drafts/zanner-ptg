@@ -4,8 +4,9 @@ var pt = require('../');
 var options = {
 	sl: 'ru',
 	tl: 'en',
-	uri: 'http://myip.ru/index_small.php',
-	fix: true
+	//uri: 'http://myip.ru/index_small.php',
+	uri: 'http://t.zanner.org.ua/task-to-translate/57cb4ccafa9a00682b684fda',
+	fix: {link: 1, script: 1, iframe: 1, meta: 1, style: 1}
 };
 pt.translate(options) // proxy:'http://104.236.222.191:3128'
 	.then(function(result){
