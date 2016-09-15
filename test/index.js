@@ -25,7 +25,8 @@ pt.translate(options) // proxy:'http://104.236.222.191:3128'
 		console.log($('body').html());
 		//console.log($(':root').html());
 		//console.log($('table.network-info > tr > td').eq(0).html().trim());
-	}, function(error){
+	})
+	.catch(function(error){
 		console.log(error);
 	});
 /** /
